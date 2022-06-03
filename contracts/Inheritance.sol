@@ -86,4 +86,8 @@ contract Inheritance is Ownable{
            }
     }
 
+    fallback()external payable{
+
+    }
+
 }

@@ -41,7 +41,7 @@ contract InheritanceInfo is Ownable{
 
 
 
-    function setInheritanceAddress(address _inheritanceAddress)public onlyOwner{
+    function setInheritanceAddress(address payable _inheritanceAddress)public onlyOwner{
         inheritance = Inheritance(_inheritanceAddress);
     }
 
