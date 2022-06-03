@@ -63,9 +63,9 @@ contract("Inheritance.sol, InheritanceInfo.sol functionality", function(accounts
         //await instance.addInheretinceAddressAndPercentage(accounts[5], 50);
         await inheritanceInfo.addDelegateOwner(accounts[2]);
         await inheritanceInfo.isDeceased({from: accounts[2]});
-        await instance.YourInheritance({from: accounts[3]});
-        await instance.YourInheritance({from: accounts[4]});
-        //await instance.YourInheritance({from: accounts[5]});
+        await instance.getYourInheritance({from: accounts[3]});
+        await instance.getYourInheritance({from: accounts[4]});
+        //await instance.getYourInheritance({from: accounts[5]});
         let restingAmount = await inheritanceInfo.getRestingAmount();
         assert.equal(restingAmount, 0);
     })

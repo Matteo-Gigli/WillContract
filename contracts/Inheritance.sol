@@ -62,7 +62,7 @@ contract Inheritance is Ownable{
 
 
 
-    function YourInheritance()external payable{
+    function getYourInheritance()external payable{
 
         uint treasure = inheritanceInfo.getRestingAmount();
         bool isDeceased = inheritanceInfo.getDeceasedStatus();
